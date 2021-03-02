@@ -97,7 +97,11 @@ var (
 	// no new platforms in 1.10
 	Platforms_1_10 = Platforms_1_9
 
-	PlatformsLatest = Platforms_1_10
+	Platforms_1_15 = append(Platforms_1_10, []Platform{
+		{"os400", "ppc64", true},
+	}...)
+
+	PlatformsLatest = Platforms_1_15
 )
 
 // SupportedPlatforms returns the full list of supported platforms for
